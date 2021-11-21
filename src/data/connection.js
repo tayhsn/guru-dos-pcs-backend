@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export const connection = knex({
-   client: "mysql",
+   client: "pg",
    connection: {
      host: process.env.DB_HOST,
      port: process.env.DB_PORT,
@@ -13,3 +13,4 @@ export const connection = knex({
      database: process.env.DB_NAME,
    },
  });
+

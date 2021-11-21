@@ -4,6 +4,9 @@ async function gerarComputador(req, res) {
   
   const {programas, valor_maximo, valor_minimo, sem_limite} = req.body;
   try {
+    //aqui eu vou fazer o algoritimo
+
+    //aqui finaliza o algoritimo
     const data = await connection("computador").insert({
 
     });
