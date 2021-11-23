@@ -39,4 +39,8 @@ async function getProgramasByCategoriaId(req, res) {
   }
 }
 
-export { getAllCategorias, getProgramasByCategoriaId };
+async function postFeedback(req, res) {
+
+}
+
+export { getAllCategorias, getProgramasByCategoriaId, postFeedback };
