@@ -1,4 +1,5 @@
 import { connection } from "../data/connection.js";
+import { transport } from "../nodemailer.js";
 
 async function getAllCategorias(_, res) {
   try {
@@ -40,7 +41,15 @@ async function getProgramasByCategoriaId(req, res) {
 }
 
 async function postFeedback(req, res) {
+  const { generationComputerNote, computerSatisfation, howEasyToUnderstand, message } = req.body
 
+  try {
+    transport.sendMail({
+      
+    })
+  } catch (error) {
+    return res.status(400).json(error.message);
+  }
 }
 
 export { getAllCategorias, getProgramasByCategoriaId, postFeedback };
