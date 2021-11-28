@@ -13,6 +13,8 @@ async function getAllCategorias(_, res) {
 async function getProgramasByCategoriaId(req, res) {
   const id = req.params.id;
 
+  if(!id) return
+
   try {
     const data = await connection
       .table("programas")
@@ -43,10 +45,28 @@ async function getProgramasByCategoriaId(req, res) {
 async function postFeedback(req, res) {
   const { generationComputerNote, computerSatisfation, howEasyToUnderstand, message } = req.body
 
+  const id = 0
+  const datetime = new Date()
+  const formattedDatetime = datetime.toLocaleString("pt-br")
+
   try {
     transport.sendMail({
-      
+      from: '<feedback@gurudospc.com>',
+      to: "feedback@gurudospc.com",
+      subject: `FEEDBACK ${id}`, 
+      text: `
+        Feedback: ${id} | 
+        Data e Hora: ${formattedDatetime}
+
+        Satisfação geral: ${computerSatisfation},
+        Nota do serviço: ${generationComputerNote},
+        Acessibilidade 
+        (10 muito fácil - 0 muito dificil): ${howEasyToUnderstand},
+        Mensagem (opcional): ${message}
+      `
     })
+    
+    id++
   } catch (error) {
     return res.status(400).json(error.message);
   }
