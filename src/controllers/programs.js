@@ -13,40 +13,57 @@ async function getAllCategorias(_, res) {
 async function getProgramasByCategoriaId(req, res) {
   const id = req.params.id;
 
-  try {
-    const data = await connection
-      .table("programas")
-      .innerJoin("categorias", "categorias.id", "=", "programas.id_categoria")
-      .innerJoin(
-        "nivel_consumo",
-        "nivel_consumo.id",
-        "=",
-        "programas.id_nivel_consumo"
-      )
-      .select(
-        "programas.id",
-        "programas.nome",
-        "programas.rank",
-        "categorias.id",
-        "categorias.categoria",
-        "nivel_consumo.id",
-        "nivel_consumo.nivel"
-      )
-      .where('programas.id_categoria', id);
+  if (!id) res.send("Precisa informar o ID da Categoria");
 
-    res.send(data).status(200);
+  try {
+    const data = await connection.raw(`
+        select pro.id, pro.nome, pro.ranking, c.id, c.categoria, nc.id, nc.nivel
+        from programas as pro
+        inner join categorias c on c.id = pro.id_categoria 
+        inner join nivel_consumo nc on nc.id = pro.id_nivel_consumo 
+        where c.id = ${id} 
+        group by pro.id, c.id, nc.id 
+    `)
+      
+    return res.send(data.rows).status(200);
   } catch (error) {
     return res.status(400).json(error.message);
   }
 }
 
 async function postFeedback(req, res) {
-  const { generationComputerNote, computerSatisfation, howEasyToUnderstand, message } = req.body
+  const {
+    howEasyToGenerate,
+    serviceSatisfaction,
+    howEasyToUnderstand,
+    message,
+  } = req.body;
+
+  let id = 0;
+
+  const datetime = new Date();
+  const formattedDatetime = datetime.toLocaleString("pt-br");
 
   try {
-    transport.sendMail({
-      
-    })
+    const feedbackSent = transport.sendMail({
+      from: "<feedback@gurudospc.com>",
+      to: "feedback@gurudospc.com",
+      subject: `FEEDBACK ${id}`,
+      text: `
+        Feedback: ${id} | 
+        Data e Hora: ${formattedDatetime}
+
+        Acessibilidade de uso: ${howEasyToGenerate}
+        Acessibilidade de informações: ${howEasyToUnderstand}
+        Nota do serviço: ${serviceSatisfaction}
+        Sugestão: ${message}
+      `,
+    });
+
+    id++;
+
+    if (feedbackSent) res.send("Feedback enviado.").status(201);
+    else res.send("Problema ao enviar o feedback.").status(500);
   } catch (error) {
     return res.status(400).json(error.message);
   }
