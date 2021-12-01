@@ -16,9 +16,9 @@ Neste repositório se encontra a API do projeto, que busca os dados de especifi�
 
 **Server:** Node, Express, Knex
 
-**Database:** MySQL
+**Database:** PostgreSQL
 
-**Infrastructure**: Servidor Privado na Nuvem
+**Infrastructure**: Heroku
 
 
 
@@ -32,10 +32,6 @@ Defendido em Salvador, 17 de Dezembro de 2021.
 
 
 ## Documentation
-
-[Documentation](https://linktodocumentation)
-
-essa documentação seria o link da documentação que a gente vai entregar pra banca
 
 
 
