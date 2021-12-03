@@ -5,7 +5,7 @@ async function gerarComputador(req, res) {
 
   try {
     const data = await connection("computador").insert({
-
+        //TODO: implementar algorithm
     });
 
     return res.send(data).status(201);
