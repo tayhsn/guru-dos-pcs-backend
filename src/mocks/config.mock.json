@@ -1,0 +1,133 @@
+{
+   "persona1": {
+      "orcamento": false,
+
+      "programas": ["Android Studio", "Pacote Office", "Canva", "League of Legends", "Fortnite" ],
+
+      "componentes": {
+         "processador": {
+            "nome": "I5 10400F 2.90 GHz (Max 4.30 GHz)",
+            "preco": "R$ 1.179,90"
+         },
+         "placa_mae": {
+            "nome": "B560M Gaming",
+            "preco": "R$ 769,90"
+         },
+         "placa_video": {
+            "nome": "Geforce GTX 1650",
+            "preco": "R$ 2.399,90"
+         },
+         "ram": {
+            "nome": "Crucial Ballistix 16GB (2x8GB)",
+            "preco": "R$ 539,80"
+         },
+         "disco_rigido": {
+            "nome": "Seagate BarraCuda 1T",
+            "preco": "R$ 319,90"
+         },
+         "SSD": {
+            "nome": "XPG S41 TUF 256GB",
+            "preco": "R$  289,90"
+         },
+         "fonte": {
+            "nome": "CX SERIECX 550",
+            "preco": "R$ 359,90"
+         },
+         "gabinete": {
+            "nome": "Pichau Lark",
+            "preco": "R$ 309,89"
+         }
+      },
+
+      "valor_total": "R$ 6.169,09"
+   },
+
+   "persona2": {
+      "orcamento": {
+         "valor_minimo": "R$ 2.000,00",
+         "valor_maximo": "R$ 2.500,00"
+      },
+
+      "programas": ["NetBeans", "Visual Studio Code", "Pacote Office", "Canva", "Zoom" ],
+
+      "componentes": {
+         "processador": {
+            "nome": "Pentium Gold G5420 3.80 GHz",
+            "preco": "R$ 479,90"
+         },
+         "placa_mae": {
+            "nome": "Gigabyte H510M",
+            "preco": "R$ 599,90"
+         },
+         "placa_video": {
+            "nome": "UHD Intel® 610",
+            "preco": ""
+         },
+         "ram": {
+            "nome": "Husky Gaming 8GB (2x4GB)",
+            "preco": "R$ 339,80"
+         },
+         "disco_rigido": {
+            "nome": "",
+            "preco": ""
+         },
+         "SSD": {
+            "nome": "XPG S41 TUF 256GB",
+            "preco": "R$  289,90"
+         },
+         "fonte": {
+            "nome": "Husky Gaming Snow 450",
+            "preco": "R$ 239,90"
+         },
+         "gabinete": {
+            "nome": "Sharkoon M25-W",
+            "preco": "R$ 279,90"
+         }
+      },
+
+      "valor_total": "R$ 2.229,30"
+   },
+
+   "persona3": {
+      "orcamento": false,
+
+      "programas": ["Adobe Illustrator", "Adobe Photoshop", "Pacote Office", "Canva", "COD Warzone" ],
+
+      "componentes": {
+         "processador": {
+            "nome": "i9-10900F",
+            "preco": "R$ 2.689,90"
+         },
+         "placa_mae": {
+            "nome": "B560M Gaming",
+            "preco": "R$ 769,90"
+         },
+         "placa_video": {
+            "nome": "RTX 3060",
+            "preco": "R$ 5,399,90"
+         },
+         "ram": {
+            "nome": "TEAM GROUP T-FORCE 32GB (2x16 GB) ",
+            "preco": "R$ 409,90"
+         },
+         "disco_rigido": {
+            "nome": "Seagate BarraCuda 1T",
+            "preco": "R$ 319,90"
+         },
+         "SSD": {
+            "nome": "Kingston A400 480GB",
+            "preco": "R$ 343,90"
+         },
+         "fonte": {
+            "nome": "CX SERIECX 650",
+            "preco": "R$ 489,90"
+         },
+         "gabinete": {
+            "nome": "Pichau Lark",
+            "preco": "R$ 309,89"
+         }
+      },
+
+      "valor_total": "R$ 11.143,09"
+   }
+}
