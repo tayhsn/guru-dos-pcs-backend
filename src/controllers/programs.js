@@ -17,7 +17,7 @@ async function getProgramasByCategoriaId(req, res) {
 
   try {
     const data = await connection.raw(`
-        select pro.id, pro.nome, pro.ranking, c.id, c.categoria, nc.id, nc.nivel
+        select 'pro.id as Programa Id', pro.nome, pro.ranking, 'c.id as Categoria Id', c.categoria, 'nc.id as Nivel de Consumo Id', nc.nivel
         from programas as pro
         inner join categorias c on c.id = pro.id_categoria 
         inner join nivel_consumo nc on nc.id = pro.id_nivel_consumo 
@@ -31,6 +31,7 @@ async function getProgramasByCategoriaId(req, res) {
   }
 }
 
+let id = 0
 async function postFeedback(req, res) {
   const {
     howEasyToGenerate,
@@ -39,7 +40,7 @@ async function postFeedback(req, res) {
     message,
   } = req.body;
 
-  let id = 0;
+  if(!howEasyToGenerate || !serviceSatisfaction || !howEasyToUnderstand) res.send("Informe todos os dados obrigátorios!")
 
   const datetime = new Date();
   const formattedDatetime = datetime.toLocaleString("pt-br");
@@ -65,7 +66,7 @@ async function postFeedback(req, res) {
     if (feedbackSent) res.send("Feedback enviado.").status(201);
     else res.send("Problema ao enviar o feedback.").status(500);
   } catch (error) {
-    return res.status(400).json(error.message);
+    return res.status(400);
   }
 }
 
