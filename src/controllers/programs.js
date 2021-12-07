@@ -17,7 +17,7 @@ async function getProgramasByCategoriaId(req, res) {
 
   try {
     const data = await connection.raw(`
-        select 'pro.id as Programa Id', pro.nome, pro.ranking, 'c.id as Categoria Id', c.categoria, 'nc.id as Nivel de Consumo Id', nc.nivel
+        select pro.id, pro.nome, pro.ranking, c.categoria, nc.nivel
         from programas as pro
         inner join categorias c on c.id = pro.id_categoria 
         inner join nivel_consumo nc on nc.id = pro.id_nivel_consumo 
