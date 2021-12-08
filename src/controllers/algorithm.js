@@ -1,17 +1,18 @@
-import { connection } from "../data/connection.js";
+import { promises as fs } from 'fs';
+const { readFile } = fs;
 
-async function gerarComputador(req, res) {
-  const { programas, valor_minimo, valor_maximo, sem_valor } = req.body
+async function getConfigs (req, res) {
+  const { persona } = req.body
 
   try {
-    const data = await connection("computador").insert({
-        //TODO: implementar algorithm
-    });
+    const allConfigs = JSON.parse( await readFile("src/mocks/config.mock.json") )
 
-    return res.send(data).status(201);
+    const { persona1, persona2, persona3 } = allConfigs
+
+    return res.send(allConfigs).status(201);
   } catch (error) {
     return res.status(400).json(error.message);
   }
 }
 
-export { gerarComputador };
+export { getConfigs };
