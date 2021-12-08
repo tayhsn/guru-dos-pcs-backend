@@ -1,147 +1,225 @@
 {
-   "persona1": {
-      "orcamento": false,
+  "persona1": {
+    "orcamento": false,
 
-      "programas": ["Android Studio", "Pacote Office", "Canva", "League of Legends", "Fortnite" ],
-
-      "componentes": {
-         "processador": {
-            "nome": "I5 10400F 2.90 GHz (Max 4.30 GHz)",
-            "preco": "R$ 1.179,90",
-            "image": ""
-         },
-         "placa_mae": {
-            "nome": "B560M Gaming",
-            "preco": "R$ 769,90",
-            "image": ""
-         },
-         "placa_video": {
-            "nome": "Geforce GTX 1650",
-            "preco": "R$ 2.399,90",
-            "image": ""
-         },
-         "ram": {
-            "nome": "Crucial Ballistix 16GB (2x8GB)",
-            "preco": "R$ 539,80",
-            "image": ""
-         },
-         "disco_rigido": {
-            "nome": "Seagate BarraCuda 1T",
-            "preco": "R$ 319,90",
-            "image": ""
-         },
-         "SSD": {
-            "nome": "XPG S41 TUF 256GB",
-            "preco": "R$  289,90",
-            "image": ""
-         },
-         "fonte": {
-            "nome": "CX SERIECX 550",
-            "preco": "R$ 359,90",
-            "image": ""
-         },
-         "gabinete": {
-            "nome": "Pichau Lark",
-            "preco": "R$ 309,89",
-            "image": ""
-         }
+    "programas": [
+      {
+        "id": "12",
+        "nome": "Android Studio",
+        "rank": "4"
       },
-
-      "valor_total": "R$ 6.169,09"
-   },
-
-   "persona2": {
-      "orcamento": {
-         "valor_minimo": "R$ 2.000,00",
-         "valor_maximo": "R$ 2.500,00"
+      {
+        "id": "18",
+        "nome": "Pacote Office",
+        "rank": "1"
       },
-
-      "programas": ["NetBeans", "Visual Studio Code", "Pacote Office", "Canva", "Zoom" ],
-
-      "componentes": {
-         "processador": {
-            "nome": "Pentium Gold G5420 3.80 GHz",
-            "preco": "R$ 479,90",
-            "image": ""
-         },
-         "placa_mae": {
-            "nome": "Gigabyte H510M",
-            "preco": "R$ 599,90",
-            "image": ""
-         },
-         "ram": {
-            "nome": "Husky Gaming 8GB (2x4GB)",
-            "preco": "R$ 339,80",
-            "image": ""
-         },
-         "SSD": {
-            "nome": "XPG S41 TUF 256GB",
-            "preco": "R$  289,90",
-            "image": ""
-         },
-         "fonte": {
-            "nome": "Husky Gaming Snow 450",
-            "preco": "R$ 239,90",
-            "image": ""
-         },
-         "gabinete": {
-            "nome": "Sharkoon M25-W",
-            "preco": "R$ 279,90",
-            "image": ""
-         }
+      {
+        "id": "17",
+        "nome": "Canva",
+        "rank": "1"
       },
-
-      "valor_total": "R$ 2.229,30"
-   },
-
-   "persona3": {
-      "orcamento": false,
-
-      "programas": ["Adobe Illustrator", "Adobe Photoshop", "Pacote Office", "Canva", "COD Warzone" ],
-
-      "componentes": {
-         "processador": {
-            "nome": "i9-10900F",
-            "preco": "R$ 2.689,90",
-            "image": ""
-         },
-         "placa_mae": {
-            "nome": "B560M Gaming",
-            "preco": "R$ 769,90",
-            "image": ""
-         },
-         "placa_video": {
-            "nome": "RTX 3060",
-            "preco": "R$ 5,399,90",
-            "image": ""
-         },
-         "ram": {
-            "nome": "TEAM GROUP T-FORCE 32GB (2x16 GB) ",
-            "preco": "R$ 409,90",
-            "image": ""
-         },
-         "disco_rigido": {
-            "nome": "Seagate BarraCuda 1T",
-            "preco": "R$ 319,90",
-            "image": ""
-         },
-         "SSD": {
-            "nome": "Kingston A400 480GB",
-            "preco": "R$ 343,90",
-            "image": ""
-         },
-         "fonte": {
-            "nome": "CX SERIECX 650",
-            "preco": "R$ 489,90",
-            "image": ""
-         },
-         "gabinete": {
-            "nome": "Pichau Lark",
-            "preco": "R$ 309,89",
-            "image": ""
-         }
+      {
+        "id": "1",
+        "nome": "League of Legends",
+        "rank": "3"
       },
+      {
+        "id": "4",
+        "nome": "Fortnite",
+        "rank": "7"
+      }
+    ],
 
-      "valor_total": "R$ 11.143,09"
-   }
+    "componentes": {
+      "processador": {
+        "nome": "I5 10400F 2.90 GHz (Max 4.30 GHz)",
+        "preco": "R$ 1.179,90",
+        "image": "https://images.kabum.com.br/produtos/fotos/112990/processador-intel-core-i5-10400-cache-12mb-2-9ghz-lga-1200-bx8070110400_1589200167_gg.jpg"
+      },
+      "placa_mae": {
+        "nome": "B560M Gaming",
+        "preco": "R$ 769,90",
+        "image": "https://images.kabum.com.br/produtos/fotos/173461/placa-mae-gigabyte-b560m-gaming-hd-rev-1-0-intel-lga1200-micro-atx-led-rgb-b560m-gaming-hd_1628079711_gg.jpg"
+      },
+      "placa_video": {
+        "nome": "Geforce GTX 1650",
+        "preco": "R$ 2.399,90",
+        "image": "https://images.kabum.com.br/produtos/fotos/112926/placa-de-video-gigabyte-nvidia-geforce-gtx-1650-d6-0c-4g-4gb-gddr6-gv-n1656oc-4gd_1591815928_gg.jpg"
+      },
+      "ram": {
+        "nome": "Crucial Ballistix 16GB (2x8GB)",
+        "preco": "R$ 539,80",
+        "image": "https://images.kabum.com.br/produtos/fotos/133504/memoria-crucial-ballistix-8gb-ddr4-3000-mhz-cl15-preto-bl8g30c15u4b_1607631000_gg.jpg"
+      },
+      "disco_rigido": {
+        "nome": "Seagate BarraCuda 1T",
+        "preco": "R$ 319,90",
+        "image": "https://images.kabum.com.br/produtos/fotos/84108/84108_index_gg.jpg"
+      },
+      "SSD": {
+        "nome": "XPG S41 TUF 256GB",
+        "preco": "R$  289,90",
+        "image": "https://images.kabum.com.br/produtos/fotos/127699/ssd-xpg-s41-tuf-256gb-m-2-pcie-leituras-3500mb-s-gravacoes-1000mb-s-agammixs41-256g-c_1606394865_gg.jpg"
+      },
+      "fonte": {
+        "nome": "CX SERIECX 550",
+        "preco": "R$ 359,90",
+        "image": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/c/p/cp-90201212.jpg"
+      },
+      "gabinete": {
+        "nome": "Pichau Lark",
+        "preco": "R$ 309,89",
+        "image": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/p/g/pg-lk-014.jpg"
+      }
+    },
+
+    "valor_total": "R$ 6.169,09"
+  },
+
+  "persona2": {
+    "orcamento": {
+      "valor_minimo": "R$ 2.000,00",
+      "valor_maximo": "R$ 2.500,00"
+    },
+
+    "programas": [
+      {
+        "id": "14",
+        "nome": "NetBeans",
+        "rank": "2"
+      },
+      {
+         "id": "18",
+         "nome": "Pacote Office",
+         "rank": "1"
+       },
+       {
+         "id": "17",
+         "nome": "Canva",
+         "rank": "1"
+       },
+      {
+        "id": "13",
+        "nome": "Visual Studio Code",
+        "rank": "1"
+      },
+      {
+        "id": "19",
+        "nome": "Zoom",
+        "rank": "1"
+      }
+    ],
+
+    "componentes": {
+      "processador": {
+        "nome": "Pentium Gold G5420 3.80 GHz",
+        "preco": "R$ 479,90",
+        "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTlU2mRoHVMwwRQ0FG3BO2O4JTOvGu11OulSlX97O_YKaZiM-_8BKUzWefJHCED2rTOAltQV251kFJHfEiLajHRHl5YwlJr6w"
+      },
+      "placa_mae": {
+        "nome": "Gigabyte H510M",
+        "preco": "R$ 599,90",
+        "image": "https://images.kabum.com.br/produtos/fotos/188292/placa-mae-gigabyte-h510m-rev-1-0-intel-lga1200-atx-ddr4-h510m-h_1628104476_gg.jpg"
+      },
+      "ram": {
+        "nome": "Husky Gaming 8GB (2x4GB)",
+        "preco": "R$ 339,80",
+        "image": "https://images.kabum.com.br/produtos/fotos/114221/memoria-husky-4gb-2666mhz-ddr4-cl19-preto-hmr-d4426_1597862480_gg.jpg"
+      },
+      "SSD": {
+        "nome": "XPG S41 TUF 256GB",
+        "preco": "R$  289,90",
+        "image": "https://images.kabum.com.br/produtos/fotos/127699/ssd-xpg-s41-tuf-256gb-m-2-pcie-leituras-3500mb-s-gravacoes-1000mb-s-agammixs41-256g-c_1606394865_gg.jpg"
+      },
+      "fonte": {
+        "nome": "Husky Gaming Snow 450",
+        "preco": "R$ 239,90",
+        "image": "https://images.kabum.com.br/produtos/fotos/114990/fonte-husky-snow-450w-80-plus-white-psu-hsn-450_1616526519_gg.jpg"
+      },
+      "gabinete": {
+        "nome": "Sharkoon M25-W",
+        "preco": "R$ 279,90",
+        "image": "https://images.kabum.com.br/produtos/fotos/84083/84083_index_gg.jpg"
+      }
+    },
+
+    "valor_total": "R$ 2.229,30"
+  },
+
+  "persona3": {
+    "orcamento": false,
+
+    "programas": [
+      {
+        "id": "9",
+        "nome": "Adobe Illustrator",
+        "rank": "6"
+      },
+      {
+         "id": "18",
+         "nome": "Pacote Office",
+         "rank": "1"
+       },
+       {
+         "id": "17",
+         "nome": "Canva",
+         "rank": "1"
+       },
+      {
+        "id": "6",
+        "nome": "Adobe Photoshop",
+        "rank": "5"
+      },
+      {
+        "id": "3",
+        "nome": "COD Warzone",
+        "rank": "6"
+      }
+    ],
+
+    "componentes": {
+      "processador": {
+        "nome": "i9-10900F",
+        "preco": "R$ 2.689,90",
+        "image": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/158261/Processador-Intel-Core-I9-10900F-10-Gera-o-Cache-20MB-2-8GHz-5-2GHz-Turbo-LGA1200-BX8070110900F_1637321955_gg.jpg"
+      },
+      "placa_mae": {
+        "nome": "B560M Gaming",
+        "preco": "R$ 769,90",
+        "image": "https://images.kabum.com.br/produtos/fotos/173461/placa-mae-gigabyte-b560m-gaming-hd-rev-1-0-intel-lga1200-micro-atx-led-rgb-b560m-gaming-hd_1628079711_gg.jpg"
+      },
+      "placa_video": {
+        "nome": "RTX 3060",
+        "preco": "R$ 5,399,90",
+        "image": "https://images.kabum.com.br/produtos/fotos/148656/placa-de-video-zotac-gaming-geforce-rtx-3060-twin-edge-15-gbps-12gb-gddr6-ray-tracing-zt-a30600e-10m_1613994258_gg.jpg"
+      },
+      "ram": {
+        "nome": "TEAM GROUP T-FORCE 32GB (2x16 GB) ",
+        "preco": "R$ 409,90",
+        "image": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/t/f/tf12d416g3200hc16f01212.jpg"
+      },
+      "disco_rigido": {
+        "nome": "Seagate BarraCuda 1T",
+        "preco": "R$ 319,90",
+        "image": "https://images.kabum.com.br/produtos/fotos/84108/84108_index_gg.jpg"
+      },
+      "SSD": {
+        "nome": "Kingston A400 480GB",
+        "preco": "R$ 343,90",
+        "image": "https://images.kabum.com.br/produtos/fotos/85198/85198_index_gg.jpg"
+      },
+      "fonte": {
+        "nome": "CX SERIECX 650",
+        "preco": "R$ 489,90",
+        "image": "https://m.media-amazon.com/images/I/51KU-O4PSKL._AC_SL1000_.jpg"
+      },
+      "gabinete": {
+        "nome": "Pichau Lark",
+        "preco": "R$ 309,89",
+        "image": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/p/g/pg-lk-014.jpg"
+      }
+    },
+
+    "valor_total": "R$ 11.143,09"
+  }
 }
