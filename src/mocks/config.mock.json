@@ -7,35 +7,43 @@
       "componentes": {
          "processador": {
             "nome": "I5 10400F 2.90 GHz (Max 4.30 GHz)",
-            "preco": "R$ 1.179,90"
+            "preco": "R$ 1.179,90",
+            "image": ""
          },
          "placa_mae": {
             "nome": "B560M Gaming",
-            "preco": "R$ 769,90"
+            "preco": "R$ 769,90",
+            "image": ""
          },
          "placa_video": {
             "nome": "Geforce GTX 1650",
-            "preco": "R$ 2.399,90"
+            "preco": "R$ 2.399,90",
+            "image": ""
          },
          "ram": {
             "nome": "Crucial Ballistix 16GB (2x8GB)",
-            "preco": "R$ 539,80"
+            "preco": "R$ 539,80",
+            "image": ""
          },
          "disco_rigido": {
             "nome": "Seagate BarraCuda 1T",
-            "preco": "R$ 319,90"
+            "preco": "R$ 319,90",
+            "image": ""
          },
          "SSD": {
             "nome": "XPG S41 TUF 256GB",
-            "preco": "R$  289,90"
+            "preco": "R$  289,90",
+            "image": ""
          },
          "fonte": {
             "nome": "CX SERIECX 550",
-            "preco": "R$ 359,90"
+            "preco": "R$ 359,90",
+            "image": ""
          },
          "gabinete": {
             "nome": "Pichau Lark",
-            "preco": "R$ 309,89"
+            "preco": "R$ 309,89",
+            "image": ""
          }
       },
 
@@ -53,35 +61,33 @@
       "componentes": {
          "processador": {
             "nome": "Pentium Gold G5420 3.80 GHz",
-            "preco": "R$ 479,90"
+            "preco": "R$ 479,90",
+            "image": ""
          },
          "placa_mae": {
             "nome": "Gigabyte H510M",
-            "preco": "R$ 599,90"
-         },
-         "placa_video": {
-            "nome": "UHD Intel® 610",
-            "preco": ""
+            "preco": "R$ 599,90",
+            "image": ""
          },
          "ram": {
             "nome": "Husky Gaming 8GB (2x4GB)",
-            "preco": "R$ 339,80"
-         },
-         "disco_rigido": {
-            "nome": "",
-            "preco": ""
+            "preco": "R$ 339,80",
+            "image": ""
          },
          "SSD": {
             "nome": "XPG S41 TUF 256GB",
-            "preco": "R$  289,90"
+            "preco": "R$  289,90",
+            "image": ""
          },
          "fonte": {
             "nome": "Husky Gaming Snow 450",
-            "preco": "R$ 239,90"
+            "preco": "R$ 239,90",
+            "image": ""
          },
          "gabinete": {
             "nome": "Sharkoon M25-W",
-            "preco": "R$ 279,90"
+            "preco": "R$ 279,90",
+            "image": ""
          }
       },
 
@@ -96,35 +102,43 @@
       "componentes": {
          "processador": {
             "nome": "i9-10900F",
-            "preco": "R$ 2.689,90"
+            "preco": "R$ 2.689,90",
+            "image": ""
          },
          "placa_mae": {
             "nome": "B560M Gaming",
-            "preco": "R$ 769,90"
+            "preco": "R$ 769,90",
+            "image": ""
          },
          "placa_video": {
             "nome": "RTX 3060",
-            "preco": "R$ 5,399,90"
+            "preco": "R$ 5,399,90",
+            "image": ""
          },
          "ram": {
             "nome": "TEAM GROUP T-FORCE 32GB (2x16 GB) ",
-            "preco": "R$ 409,90"
+            "preco": "R$ 409,90",
+            "image": ""
          },
          "disco_rigido": {
             "nome": "Seagate BarraCuda 1T",
-            "preco": "R$ 319,90"
+            "preco": "R$ 319,90",
+            "image": ""
          },
          "SSD": {
             "nome": "Kingston A400 480GB",
-            "preco": "R$ 343,90"
+            "preco": "R$ 343,90",
+            "image": ""
          },
          "fonte": {
             "nome": "CX SERIECX 650",
-            "preco": "R$ 489,90"
+            "preco": "R$ 489,90",
+            "image": ""
          },
          "gabinete": {
             "nome": "Pichau Lark",
-            "preco": "R$ 309,89"
+            "preco": "R$ 309,89",
+            "image": ""
          }
       },
 
