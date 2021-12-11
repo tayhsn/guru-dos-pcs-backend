@@ -9,27 +9,27 @@
       {
         "id": 12,
         "nome": "Android Studio",
-        "rank": 4
+        "ranking": 4
       },
       {
         "id": 18,
         "nome": "Pacote Office",
-        "rank": 1
+        "ranking": 1
       },
       {
         "id": 17,
         "nome": "Canva",
-        "rank": 1
+        "ranking": 1
       },
       {
         "id": 1,
         "nome": "League of Legends",
-        "rank": 3
+        "ranking": 3
       },
       {
         "id": 4,
         "nome": "Fortnite",
-        "rank": 7
+        "ranking": 7
       }
     ],
 
@@ -161,27 +161,27 @@
       {
         "id": 14,
         "nome": "NetBeans",
-        "rank": 2
+        "ranking": 2
       },
       {
          "id": 18,
          "nome": "Pacote Office",
-         "rank": 1
+         "ranking": 1
        },
        {
          "id": 17,
          "nome": "Canva",
-         "rank": 1
+         "ranking": 1
        },
       {
         "id": 13,
         "nome": "Visual Studio Code",
-        "rank": 1
+        "ranking": 1
       },
       {
         "id": 19,
         "nome": "Zoom",
-        "rank": 1
+        "ranking": 1
       }
     ],
 
@@ -281,27 +281,27 @@
       {
         "id": "9",
         "nome": "Adobe Illustrator",
-        "rank": "6"
+        "ranking": "6"
       },
       {
          "id": "18",
          "nome": "Pacote Office",
-         "rank": "1"
+         "ranking": "1"
        },
        {
          "id": "17",
          "nome": "Canva",
-         "rank": "1"
+         "ranking": "1"
        },
       {
         "id": "6",
         "nome": "Adobe Photoshop",
-        "rank": "5"
+        "ranking": "5"
       },
       {
         "id": "3",
         "nome": "COD Warzone",
-        "rank": "6"
+        "ranking": "6"
       }
     ],
 
