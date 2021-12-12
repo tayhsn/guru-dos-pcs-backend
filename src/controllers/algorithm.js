@@ -19,7 +19,6 @@ function getHighestRanking(userSelectedPrograms) {
   };
 }
 
-//quantos tem mais programas em comum com maior ranking
 function compareSelectedPrograms(highestPrograms, personaPrograms) {
   let commonPrograms = 0;
 
