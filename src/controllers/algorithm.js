@@ -34,6 +34,18 @@ function compareSelectedPrograms(highestPrograms, personaPrograms) {
   return commonPrograms;
 }
 
+function compareRanking(highestRanking, personaPrograms) {
+  let commonHighestRanking = 0;
+
+  personaPrograms.forEach(program => {
+    if(program.ranking === highestRanking) {
+      commonHighestRanking++;
+    }
+  });
+
+  return commonHighestRanking;
+}
+
 function generatingComputer(commonProgramsValue, highestCommonValue, orcamento, persona) {
   if(commonProgramsValue === highestCommonValue) {
     if(orcamento === false || orcamento.valor_maximo >= persona.valor_total) {
@@ -66,7 +78,7 @@ async function getConfigs (req, res) {
 
     const { persona1, persona2, persona3 } = allConfigs
 
-    const { highestPrograms } =  getHighestRanking(userProfile.selectedPrograms);
+    const { highestPrograms, highestRanking } =  getHighestRanking(userProfile.selectedPrograms);
   
     const commonProgramsOne = compareSelectedPrograms(highestPrograms, persona1.programas)
     const commonProgramsTwo = compareSelectedPrograms(highestPrograms, persona2.programas)
@@ -75,7 +87,22 @@ async function getConfigs (req, res) {
     const highestCommonValue = Math.max(commonProgramsOne, commonProgramsTwo, commonProgramsThree) 
 
     if(highestCommonValue === 0) {
-      //verifica o que tem mais com o mesmo ranking 
+      const commonRankingOne = compareRanking(highestRanking, persona1.programas);
+      const commonRankingTwo = compareRanking(highestRanking, persona2.programas);
+      const commonRankingThree = compareRanking(highestRanking, persona3.programas);
+
+      const mostFrequently = Math.max(commonRankingOne, commonRankingTwo, commonRankingThree); 
+
+      let computer;
+      computer = generatingComputer(commonRankingOne, mostFrequently, userProfile.orcamento, persona1);
+      if(!computer) {
+        computer = generatingComputer(commonRankingTwo, mostFrequently, userProfile.orcamento, persona2);
+        if(!computer) {
+          computer = generatingComputer(commonRankingThree, mostFrequently, userProfile.orcamento, persona3);
+        }
+      }
+
+      return res.send(computer).status(200);
     } else {
       let computer;
       computer = generatingComputer(commonProgramsOne, highestCommonValue, userProfile.orcamento, persona1);

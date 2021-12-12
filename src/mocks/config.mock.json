@@ -474,29 +474,29 @@
 
     "programas": [
       {
-        "id": "9",
+        "id": 9,
         "nome": "Adobe Illustrator",
-        "ranking": "6"
+        "ranking": 6
       },
       {
-         "id": "18",
+         "id": 18,
          "nome": "Pacote Office",
-         "ranking": "1"
+         "ranking": 1
        },
        {
-         "id": "17",
+         "id": 17,
          "nome": "Canva",
-         "ranking": "1"
+         "ranking": 1
        },
       {
-        "id": "6",
+        "id": 6,
         "nome": "Adobe Photoshop",
-        "ranking": "5"
+        "ranking": 5
       },
       {
-        "id": "3",
+        "id": 3,
         "nome": "COD Warzone",
-        "ranking": "6"
+        "ranking": 6
       }
     ],
 
