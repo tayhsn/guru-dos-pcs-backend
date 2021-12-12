@@ -1,7 +1,6 @@
 import { promises as fs } from 'fs';
 const { readFile } = fs;
 
-//qual o maior ranking? 
 function getHighestRanking(userSelectedPrograms) {
   let highestRanking = 0;
   let highestPrograms = [];
@@ -20,6 +19,42 @@ function getHighestRanking(userSelectedPrograms) {
   };
 }
 
+//quantos tem mais programas em comum com maior ranking
+function compareSelectedPrograms(highestPrograms, personaPrograms) {
+  let commonPrograms = 0;
+
+  highestPrograms.forEach(program => {
+    const found = personaPrograms.find(personaProgram => 
+      personaProgram.nome.toLowerCase() === program.nome.toLowerCase()
+    );
+    if(found) {
+      commonPrograms++;
+    }
+  });
+
+  return commonPrograms;
+}
+
+function generatingComputer(commonProgramsValue, highestCommonValue, orcamento, persona) {
+  if(commonProgramsValue === highestCommonValue) {
+    if(orcamento === false || orcamento.valor_maximo >= persona.valor_total) {
+      return {
+        "message": "Computador gerado!",
+        "computer": persona.componentes,
+        "valor_total": persona.valor_total
+      }
+    } else {
+      return { 
+        "message": "Orçamento insuficiente.",
+        "computer": persona.componentes,
+        "valor_total": persona.valor_total
+      }
+    }
+  }
+
+  return false;
+}
+
 async function getConfigs (req, res) {
   const { userProfile } = req.body
 
@@ -32,9 +67,28 @@ async function getConfigs (req, res) {
 
     const { persona1, persona2, persona3 } = allConfigs
 
-    const result =  getHighestRanking(userProfile.selectedPrograms);
+    const { highestPrograms } =  getHighestRanking(userProfile.selectedPrograms);
+  
+    const commonProgramsOne = compareSelectedPrograms(highestPrograms, persona1.programas)
+    const commonProgramsTwo = compareSelectedPrograms(highestPrograms, persona2.programas)
+    const commonProgramsThree = compareSelectedPrograms(highestPrograms, persona2.programas)
 
-    return res.send(result).status(201);
+    const highestCommonValue = Math.max(commonProgramsOne, commonProgramsTwo, commonProgramsThree) 
+
+    if(highestCommonValue === 0) {
+      //verifica o que tem mais com o mesmo ranking 
+    } else {
+      let computer;
+      computer = generatingComputer(commonProgramsOne, highestCommonValue, userProfile.orcamento, persona1);
+      if(!computer) {
+        computer = generatingComputer(commonProgramsTwo, highestCommonValue, userProfile.orcamento, persona2);
+        if(!computer) {
+          computer = generatingComputer(commonProgramsThree, highestCommonValue, userProfile.orcamento, persona3);
+        }
+      }
+
+      return res.send(computer).status(200);
+    }
   } catch (error) {
     return res.status(400).json(error.message);
   }
