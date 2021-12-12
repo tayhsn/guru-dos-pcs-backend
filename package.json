@@ -4,7 +4,8 @@
   "description": "Backend do Guru dos PCs",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon ."
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
   },
   "type": "module",
   "keywords": [],
