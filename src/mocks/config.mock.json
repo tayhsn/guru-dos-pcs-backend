@@ -1,149 +1,472 @@
 {
   "persona1": {
-    "orcamento": false,
+    "orcamento": {
+      "valor_minimo": 2500,
+      "valor_maximo": 7000
+    },
 
     "programas": [
       {
-        "id": "12",
+        "id": 12,
         "nome": "Android Studio",
-        "rank": "4"
+        "ranking": 4
       },
       {
-        "id": "18",
+        "id": 18,
         "nome": "Pacote Office",
-        "rank": "1"
+        "ranking": 1
       },
       {
-        "id": "17",
+        "id": 17,
         "nome": "Canva",
-        "rank": "1"
+        "ranking": 1
       },
       {
-        "id": "1",
+        "id": 1,
         "nome": "League of Legends",
-        "rank": "3"
+        "ranking": 3
       },
       {
-        "id": "4",
+        "id": 4,
         "nome": "Fortnite",
-        "rank": "7"
+        "ranking": 7
       }
     ],
 
-    "componentes": {
-      "processador": {
-        "nome": "I5 10400F 2.90 GHz (Max 4.30 GHz)",
-        "preco": "R$ 1.179,90",
-        "image": "https://images.kabum.com.br/produtos/fotos/112990/processador-intel-core-i5-10400-cache-12mb-2-9ghz-lga-1200-bx8070110400_1589200167_gg.jpg"
+    "componentes": [
+      {
+        "id": 4,
+        "componente": "Processador",
+        "marca": "Intel",
+        "nome": "i5-10400F",
+        "frequencia_base": "2.90 GHz",
+        "frequencia_maxima": "4.30 GHz",
+        "sockt": "Lga 1200",
+        "tdp": "65 W",
+        "memoria_maxima": 128,
+        "tipo_memoria_frequencia": "2666MHz",
+        "tipo_memoria": "DDR4",
+        "maximo_canais_memoria": 2,
+        "threads": 12,
+        "nucleos": 6,
+        "content": [
+          {
+            "label": "Frequência",
+            "value": "2.90GHz - 4.30GHz"
+          },
+          {
+            "label": "Socket",
+            "value": "Lga 1200"
+          },
+          {
+            "label": "Número de Núcleos",
+            "value": 6
+          },
+          {
+            "label": "Número de Threads",
+            "value": 12
+          }
+        ],
+        "preco": 1179.90,
+        "image": "https://images.kabum.com.br/produtos/fotos/112990/processador-intel-core-i5-10400-cache-12mb-2-9ghz-lga-1200-bx8070110400_1589200167_gg.jpg",
+        "icon": "https://i.imgur.com/rTxfxGd.png"
       },
-      "placa_mae": {
+      {
+        "id": 3,
+        "componente": "Placa mãe",
+        "marca": "Gigabyte",
         "nome": "B560M Gaming",
-        "preco": "R$ 769,90",
-        "image": "https://images.kabum.com.br/produtos/fotos/173461/placa-mae-gigabyte-b560m-gaming-hd-rev-1-0-intel-lga1200-micro-atx-led-rgb-b560m-gaming-hd_1628079711_gg.jpg"
+        "sockt": "LGA 1200",
+        "slot_pci_express": 4,
+        "capacidade_memoria": 64,
+        "tipo_memoria": "DDR4",
+        "velocidade_conector_sata": "6 Gb/s",
+        "conector_m2": "2260/2280 SATA",
+        "padrao_placa_mae": "Micro-ATX",
+        "content": [
+          {
+            "label": "Socket",
+            "value": "Lga 1200"
+          },
+          {
+            "label": "Padrão",
+            "value": "Micro-ATX"
+          },
+          {
+            "label": "Tipo de Memória",
+            "value": "DDR4"
+          },
+          {
+            "label": "Capacidade de Memória",
+            "value": "64 GB"
+          }
+        ],
+        "preco": 769.90,
+        "image": "https://images.kabum.com.br/produtos/fotos/173461/placa-mae-gigabyte-b560m-gaming-hd-rev-1-0-intel-lga1200-micro-atx-led-rgb-b560m-gaming-hd_1628079711_gg.jpg",
+        "icon": "https://i.imgur.com/R6yEBkU.png"
       },
-      "placa_video": {
-        "nome": "Geforce GTX 1650",
-        "preco": "R$ 2.399,90",
-        "image": "https://images.kabum.com.br/produtos/fotos/112926/placa-de-video-gigabyte-nvidia-geforce-gtx-1650-d6-0c-4g-4gb-gddr6-gv-n1656oc-4gd_1591815928_gg.jpg"
+      {
+        "id": 4,
+        "componente": "Placa de vídeo",
+        "marca": "GeForce",
+        "nome": "GeForce GTX 1650",
+        "tipo": "DDR4",
+        "frequencia_base": "1485 MHz",
+        "frequencia_maxima": "1695 MHz",
+        "memoria": 4,
+        "pci_express": 3,
+        "psu_recomendado": "450 W",
+        "velocidade": "8Gbps",
+        "content": [
+          {
+            "label": "Memória",
+            "value": "4 GB"
+          },
+          {
+            "label": "Tipo",
+            "value": "DDR4"
+          }
+        ],
+        "preco": 2399.90,
+        "image": "https://images.kabum.com.br/produtos/fotos/112926/placa-de-video-gigabyte-nvidia-geforce-gtx-1650-d6-0c-4g-4gb-gddr6-gv-n1656oc-4gd_1591815928_gg.jpg",
+        "icon": "https://i.imgur.com/phiNyt2.png"
       },
-      "ram": {
-        "nome": "Crucial Ballistix 16GB (2x8GB)",
-        "preco": "R$ 539,80",
-        "image": "https://images.kabum.com.br/produtos/fotos/133504/memoria-crucial-ballistix-8gb-ddr4-3000-mhz-cl15-preto-bl8g30c15u4b_1607631000_gg.jpg"
+      {
+        "id": 2,
+        "componente": "Ram",
+        "marca": "Crucial",
+        "quantidade": 2,
+        "nome": "Crucial Ballistix",
+        "frequencia": "2666 MHz",
+        "tipo_memoria": "DDR4",
+        "capacidade": 8,
+        "content": [
+          {
+            "label": "Memória",
+            "value": "8 GB"
+          },
+          {
+            "label": "Frequência",
+            "value": "2666 MHz"
+          },
+          {
+            "label": "Tipo",
+            "value": "DDR4"
+          }
+        ],
+        "preco": 269.90,
+        "image": "https://images.kabum.com.br/produtos/fotos/133504/memoria-crucial-ballistix-8gb-ddr4-3000-mhz-cl15-preto-bl8g30c15u4b_1607631000_gg.jpg",
+        "icon": "https://i.imgur.com/nXeSs0C.png"
       },
-      "disco_rigido": {
-        "nome": "Seagate BarraCuda 1T",
-        "preco": "R$ 319,90",
-        "image": "https://images.kabum.com.br/produtos/fotos/84108/84108_index_gg.jpg"
+      {
+        "id": 1,
+        "componente": "HD",
+        "marca": "Seagate",
+        "nome": "Seagate BarraCuda",
+        "rpm": 7200,
+        "interface": "SATA 6Gb/s",
+        "potencia": "5.3W",
+        "capacidade": 1000,
+        "content": [
+          {
+            "label": "Capacidade",
+            "value": "1 Terabyte"
+          },
+          {
+            "label": "Interface",
+            "value": "SATA 6Gb/s"
+          }
+        ],
+        "preco": 319.90,
+        "image": "https://images.kabum.com.br/produtos/fotos/84108/84108_index_gg.jpg",
+        "icon": "https://i.imgur.com/hEBBDqV.png"
       },
-      "SSD": {
-        "nome": "XPG S41 TUF 256GB",
-        "preco": "R$  289,90",
-        "image": "https://images.kabum.com.br/produtos/fotos/127699/ssd-xpg-s41-tuf-256gb-m-2-pcie-leituras-3500mb-s-gravacoes-1000mb-s-agammixs41-256g-c_1606394865_gg.jpg"
+      {
+        "id": 2,
+        "componente": "SSD", 
+        "marca": "XPG",
+        "nome": "XPG S41 TUF",
+        "tipo": "M.2",
+        "interface": "PCIe Gen3x4",
+        "capacidade": 256,
+        "potencia": "8.6W",
+        "velocidade_leitura": "3500MB/s",
+        "velocidade_gravacao": "1000MB/s",
+        "content": [
+          {
+            "label": "Capacidade",
+            "value": "256GB"
+          },
+          {
+            "label": "Tipo",
+            "value": "M.2"
+          },
+          {
+            "label": "Interface",
+            "value": "PCIe Gen3x4"
+          }
+        ],
+        "preco": 289.90,
+        "image": "https://images.kabum.com.br/produtos/fotos/127699/ssd-xpg-s41-tuf-256gb-m-2-pcie-leituras-3500mb-s-gravacoes-1000mb-s-agammixs41-256g-c_1606394865_gg.jpg",
+        "icon": "https://i.imgur.com/ELO6FU5.png"
       },
-      "fonte": {
-        "nome": "CX SERIECX 550",
-        "preco": "R$ 359,90",
-        "image": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/c/p/cp-90201212.jpg"
+      {
+        "id": 2,
+        "componente": "Fonte",
+        "nome": "CX SERIES CX550",
+        "marca": "Corsair",
+        "pfc": "Ativo",
+        "potencia": "550W",
+        "tensao_entrada": "100 - 240 VAC",
+        "selo": "80 Plus Bronze",
+        "content": [
+          {
+            "label": "Potência",
+            "value": "550W"
+          },
+          {
+            "label": "Eficiência",
+            "value": "80 Plus Bronze"
+          }
+        ],
+        "preco": 359.90,
+        "image": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/c/p/cp-90201212.jpg",
+        "icon": "https://i.imgur.com/QQeaQ5d.png"
       },
-      "gabinete": {
+      {
+        "id": 2,
+        "componente": "Gabinete",
         "nome": "Pichau Lark",
-        "preco": "R$ 309,89",
-        "image": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/p/g/pg-lk-014.jpg"
+        "marca": "Pichau",
+        "dimensoes": "370 x 205 x 440 mm",
+        "padrao_placa_mae": [
+          "ATX",
+          "Micro-ATX",
+          "Mini-ITX"
+        ],
+        "content": [
+          {
+            "label": "Padrão Placa Mãe",
+            "value": "ATX, Micro-ATX e Mini-ITX"
+          },
+          {
+            "label": "Dimensões",
+            "value": "370x205x440 mm"
+          }
+        ],
+        "preco": 309.89,
+        "image": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/p/g/pg-lk-014.jpg",
+        "icon": "https://i.imgur.com/9RFLzZU.png"
       }
-    },
+    ],
 
-    "valor_total": "R$ 6.169,09"
+    "valor_total": 6169.09
   },
 
   "persona2": {
     "orcamento": {
-      "valor_minimo": "R$ 2.000,00",
-      "valor_maximo": "R$ 2.500,00"
+      "valor_minimo": 1000,
+      "valor_maximo": 2500
     },
 
     "programas": [
       {
-        "id": "14",
+        "id": 14,
         "nome": "NetBeans",
-        "rank": "2"
+        "ranking": 2
       },
       {
-         "id": "18",
+         "id": 18,
          "nome": "Pacote Office",
-         "rank": "1"
+         "ranking": 1
        },
        {
-         "id": "17",
+         "id": 17,
          "nome": "Canva",
-         "rank": "1"
+         "ranking": 1
        },
       {
-        "id": "13",
+        "id": 13,
         "nome": "Visual Studio Code",
-        "rank": "1"
+        "ranking": 1
       },
       {
-        "id": "19",
+        "id": 19,
         "nome": "Zoom",
-        "rank": "1"
+        "ranking": 1
       }
     ],
 
-    "componentes": {
-      "processador": {
-        "nome": "Pentium Gold G5420 3.80 GHz",
+    "componentes": [
+      {
+        "id": 2,
+        "componente": "Processador",
+        "marca": "Intel",
+        "nome": "Pentium Gold G5420",
+        "frequencia_base": "3.80 GHz",
+        "frequencia_maxima": "3.80 GHz",
+        "sockt": "Lga 1200",
+        "tdp": "54 W",
+        "memoria_maxima": 64,
+        "tipo_memoria_frequencia": "2400MHz",
+        "tipo_memoria": "DDR4",
+        "maximo_canais_memoria": 2,
+        "threads": 4,
+        "nucleos": 2,
+        "content": [
+          {
+            "label": "Frequência",
+            "value": "3.80 GHz"
+          },
+          {
+            "label": "Socket",
+            "value": "Lga 1200"
+          },
+          {
+            "label": "Número de Núcleos",
+            "value": 2
+          },
+          {
+            "label": "Número de Threads",
+            "value": 4
+          }
+        ],
         "preco": "R$ 479,90",
-        "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTlU2mRoHVMwwRQ0FG3BO2O4JTOvGu11OulSlX97O_YKaZiM-_8BKUzWefJHCED2rTOAltQV251kFJHfEiLajHRHl5YwlJr6w"
+        "image": "https://images.kabum.com.br/produtos/fotos/156169/processador-intel-pentium-gold-g5420-cache-4m-3-80-ghz-lga1151-intel-uhd-graphics-610-2-nucleos-bx80684g5420_1627567012_gg.jpg",
+        "icon": "https://i.imgur.com/rTxfxGd.png"
       },
-      "placa_mae": {
-        "nome": "Gigabyte H510M",
-        "preco": "R$ 599,90",
-        "image": "https://images.kabum.com.br/produtos/fotos/188292/placa-mae-gigabyte-h510m-rev-1-0-intel-lga1200-atx-ddr4-h510m-h_1628104476_gg.jpg"
-      },
-      "ram": {
-        "nome": "Husky Gaming 8GB (2x4GB)",
-        "preco": "R$ 339,80",
-        "image": "https://images.kabum.com.br/produtos/fotos/114221/memoria-husky-4gb-2666mhz-ddr4-cl19-preto-hmr-d4426_1597862480_gg.jpg"
-      },
-      "SSD": {
-        "nome": "XPG S41 TUF 256GB",
-        "preco": "R$  289,90",
-        "image": "https://images.kabum.com.br/produtos/fotos/127699/ssd-xpg-s41-tuf-256gb-m-2-pcie-leituras-3500mb-s-gravacoes-1000mb-s-agammixs41-256g-c_1606394865_gg.jpg"
-      },
-      "fonte": {
-        "nome": "Husky Gaming Snow 450",
-        "preco": "R$ 239,90",
-        "image": "https://images.kabum.com.br/produtos/fotos/114990/fonte-husky-snow-450w-80-plus-white-psu-hsn-450_1616526519_gg.jpg"
-      },
-      "gabinete": {
-        "nome": "Sharkoon M25-W",
-        "preco": "R$ 279,90",
-        "image": "https://images.kabum.com.br/produtos/fotos/84083/84083_index_gg.jpg"
-      }
-    },
+      {
+        "id": 1,
+        "componente": "Placa mãe",
+        "marca": "Gigabyte",
+        "nome": "Gigabyte H510M S2H",
+        "sockt": "Lga 1200",
+        "slot_pci_express": 4,
+        "capacidade_memoria": 64,
+        "tipo_memoria": "DDR4",
+        "velocidade_conector_sata": "6 Gb/s",
+        "conector_m2": "2260/2280 SATA",
+        "padrao_placa_mae": "Micro-ATX",
+        "content": [
+          {
+            "label": "Socket",
+            "value": "Lga 1200"
+          },
+          {
+            "label": "Padrão",
+            "value": "Micro-ATX"
+          },
+          {
+            "label": "Tipo de Memória",
+            "value": "DDR4"
+          },
+          {
+            "label": "Capacidade de Memória",
+            "value": "64 GB"
+          }
+        ],
+        "preco": 599.90,
+        "image": "https://images.kabum.com.br/produtos/fotos/188292/placa-mae-gigabyte-h510m-rev-1-0-intel-lga1200-atx-ddr4-h510m-h_1628104476_gg.jpg",
+        "icon": "https://i.imgur.com/R6yEBkU.png"
 
-    "valor_total": "R$ 2.229,30"
+      },
+      {
+        "id": 1,
+        "componente": "Ram",
+        "marca": "Crucial",
+        "quantidade": 2,
+        "nome": "Husky Gaming",
+        "frequencia": "2666 MHz",
+        "tipo_memoria": "DDR4",
+        "capacidade": 4,
+        "content": [
+          {
+            "label": "Memória",
+            "value": "4 GB"
+          },
+          {
+            "label": "Tipo",
+            "value": "DDR4"
+          }
+        ],
+        "preco": 169.90,
+        "image": "https://images.kabum.com.br/produtos/fotos/114221/memoria-husky-4gb-2666mhz-ddr4-cl19-preto-hmr-d4426_1597862480_gg.jpg",
+        "icon": "https://i.imgur.com/nXeSs0C.png"
+      },
+      {
+        "id": 1,
+        "componente": "HD",
+        "marca": "Seagate",
+        "nome": "Seagate BarraCuda",
+        "rpm": 7200,
+        "interface": "SATA 6Gb/s",
+        "potencia": "5.3W",
+        "capacidade": 1000,
+        "content": [
+          {
+            "label": "Capacidade",
+            "value": "1 Terabyte"
+          },
+          {
+            "label": "Interface",
+            "value": "SATA 6Gb/s"
+          }
+        ],
+        "preco": 319.90,
+        "image": "https://images.kabum.com.br/produtos/fotos/84108/84108_index_gg.jpg",
+        "icon": "https://i.imgur.com/hEBBDqV.png"
+      },
+      {
+        "id": 1,
+        "componente": "Fonte",
+        "marca": "Husky",
+        "nome": "Husky Gaming Snow",
+        "pfc": "Ativo",
+        "potencia": "450W",
+        "tensao_entrada": "100 - 240 VAC",
+        "selo": "80 Plus White",
+        "content": [
+          {
+            "label": "Potência",
+            "value": "450W"
+          },
+          {
+            "label": "Eficiência",
+            "value": "80 Plus White"
+          }
+        ],
+        "preco": 239.90,
+        "image": "https://images.kabum.com.br/produtos/fotos/114990/fonte-husky-snow-450w-80-plus-white-psu-hsn-450_1616526519_gg.jpg",
+        "icon": "https://i.imgur.com/QQeaQ5d.png"
+      },
+      {
+        "id": 1,
+        "componente": "Gabinete",
+        "nome": "Sharkoon M25-W",
+        "marca": "Sharkoon",
+        "dimensoes": "45.0 x 21.0 x 46.5 cm",
+        "padrao_placa_mae": [
+          "ATX",
+          "Micro-ATX",
+          "Mini-ITX"
+        ],
+        "content": [
+          {
+            "label": "Padrão Placa Mãe",
+            "value": "ATX, Micro-ATX e Mini-ITX"
+          },
+          {
+            "label": "Dimensões",
+            "value": "45.0x21.0x46.5 cm"
+          }
+        ],
+        "preco": 279.90,
+        "image": "https://images.kabum.com.br/produtos/fotos/84083/84083_index_gg.jpg",
+        "icon": "https://i.imgur.com/9RFLzZU.png"
+      }
+    ],
+
+    "valor_total": 2309.30
   },
 
   "persona3": {
@@ -151,75 +474,259 @@
 
     "programas": [
       {
-        "id": "9",
+        "id": 9,
         "nome": "Adobe Illustrator",
-        "rank": "6"
+        "ranking": 6
       },
       {
-         "id": "18",
+         "id": 18,
          "nome": "Pacote Office",
-         "rank": "1"
+         "ranking": 1
        },
        {
-         "id": "17",
+         "id": 17,
          "nome": "Canva",
-         "rank": "1"
+         "ranking": 1
        },
       {
-        "id": "6",
+        "id": 6,
         "nome": "Adobe Photoshop",
-        "rank": "5"
+        "ranking": 5
       },
       {
-        "id": "3",
+        "id": 3,
         "nome": "COD Warzone",
-        "rank": "6"
+        "ranking": 6
       }
     ],
 
-    "componentes": {
-      "processador": {
+    "componentes": [
+      {
+        "id": 6,
+        "componente": "Processador",
+        "marca": "Intel",
         "nome": "i9-10900F",
+        "frequencia_base": "2.80 GHz",
+        "frequencia_maxima": "5.20 GHz",
+        "sockt": "Lga 1200",
+        "tdp": "65 W",
+        "memoria_maxima": 128,
+        "tipo_memoria_frequencia": "2933MHz",
+        "tipo_memoria": "DDR4",
+        "maximo_canais_memoria": 2,
+        "threads": 20,
+        "nucleos": 10,
+        "content": [
+          {
+            "label": "Frequência",
+            "value": "2.80GHz - 5.20GHz"
+          },
+          {
+            "label": "Socket",
+            "value": "Lga 1200"
+          },
+          {
+            "label": "Número de Núcleos",
+            "value": 10
+          },
+          {
+            "label": "Número de Threads",
+            "value": 20
+          }
+        ],
         "preco": "R$ 2.689,90",
-        "image": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/158261/Processador-Intel-Core-I9-10900F-10-Gera-o-Cache-20MB-2-8GHz-5-2GHz-Turbo-LGA1200-BX8070110900F_1637321955_gg.jpg"
+        "image": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/158261/Processador-Intel-Core-I9-10900F-10-Gera-o-Cache-20MB-2-8GHz-5-2GHz-Turbo-LGA1200-BX8070110900F_1637321955_gg.jpg",
+        "icon": "https://i.imgur.com/rTxfxGd.png"
       },
-      "placa_mae": {
+      {
+        "id": 3,
+        "componente": "Placa mãe",
+        "marca": "Gigabyte",
         "nome": "B560M Gaming",
-        "preco": "R$ 769,90",
-        "image": "https://images.kabum.com.br/produtos/fotos/173461/placa-mae-gigabyte-b560m-gaming-hd-rev-1-0-intel-lga1200-micro-atx-led-rgb-b560m-gaming-hd_1628079711_gg.jpg"
+        "sockt": "Lga 1200",
+        "slot_pci_express": 4,
+        "capacidade_memoria": 64,
+        "tipo_memoria": "DDR4",
+        "velocidade_conector_sata": "6 Gb/s",
+        "conector_m2": "2260/2280 SATA",
+        "padrao_placa_mae": "Micro-ATX",
+        "content": [
+          {
+            "label": "Socket",
+            "value": "Lga 1200"
+          },
+          {
+            "label": "Padrão",
+            "value": "Micro-ATX"
+          },
+          {
+            "label": "Tipo de Memória",
+            "value": "DDR4"
+          },
+          {
+            "label": "Capacidade de Memória",
+            "value": "64 GB"
+          }
+        ],
+        "preco": 769.90,
+        "image": "https://images.kabum.com.br/produtos/fotos/173461/placa-mae-gigabyte-b560m-gaming-hd-rev-1-0-intel-lga1200-micro-atx-led-rgb-b560m-gaming-hd_1628079711_gg.jpg",
+        "icon": "https://i.imgur.com/R6yEBkU.png"
       },
-      "placa_video": {
+      {
+        "id": 4,
+        "componente": "Placa de vídeo",
+        "marca": "Galax",
         "nome": "RTX 3060",
-        "preco": "R$ 5,399,90",
-        "image": "https://images.kabum.com.br/produtos/fotos/148656/placa-de-video-zotac-gaming-geforce-rtx-3060-twin-edge-15-gbps-12gb-gddr6-ray-tracing-zt-a30600e-10m_1613994258_gg.jpg"
+        "tipo": "DDR4",
+        "frequencia_base": "1780 MHz",
+        "frequencia_maxima": "1807 MHz",
+        "memoria": 12,
+        "pci_express": 3,
+        "psu_recomendado": "550 W",
+        "velocidade": "15 Gbps",
+        "content": [
+          {
+            "label": "Memória",
+            "value": "12 GB"
+          },
+          {
+            "label": "Tipo",
+            "value": "DDR4"
+          }
+        ],
+        "preco": 5399.90,
+        "image": "https://images.kabum.com.br/produtos/fotos/148656/placa-de-video-zotac-gaming-geforce-rtx-3060-twin-edge-15-gbps-12gb-gddr6-ray-tracing-zt-a30600e-10m_1613994258_gg.jpg",
+        "icon": "https://i.imgur.com/phiNyt2.png"
       },
-      "ram": {
-        "nome": "TEAM GROUP T-FORCE 32GB (2x16 GB) ",
-        "preco": "R$ 409,90",
-        "image": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/t/f/tf12d416g3200hc16f01212.jpg"
+      {
+        "id": 1,
+        "componente": "Ram",
+        "marca": "Team Group",
+        "quantidade": 2,
+        "nome": "Team Group T-Force",
+        "frequencia": "3200 MHz",
+        "tipo_memoria": "DDR4",
+        "capacidade": 16,
+        "content": [
+          {
+            "label": "Memória",
+            "value": "16 GB"
+          },
+          {
+            "label": "Frequência",
+            "value": "3200 MHz"
+          },
+          {
+            "label": "Tipo",
+            "value": "DDR4"
+          }
+        ],
+        "preco": 409.90,
+        "image": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/t/f/tf12d416g3200hc16f01212.jpg",
+        "icon": "https://i.imgur.com/nXeSs0C.png"
       },
-      "disco_rigido": {
-        "nome": "Seagate BarraCuda 1T",
-        "preco": "R$ 319,90",
-        "image": "https://images.kabum.com.br/produtos/fotos/84108/84108_index_gg.jpg"
+      {
+        "id": 1,
+        "componente": "HD",
+        "marca": "Seagate",
+        "nome": "Seagate BarraCuda",
+        "rpm": 7200,
+        "interface": "SATA 6Gb/s",
+        "potencia": "5.3W",
+        "capacidade": 1000,
+        "content": [
+          {
+            "label": "Capacidade",
+            "value": "1 Terabyte"
+          },
+          {
+            "label": "Interface",
+            "value": "SATA 6Gb/s"
+          }
+        ],
+        "preco": 319.90,
+        "image": "https://images.kabum.com.br/produtos/fotos/84108/84108_index_gg.jpg",
+        "icon": "https://i.imgur.com/hEBBDqV.png"
       },
-      "SSD": {
+      {
+        "id": 1,
+        "componente": "SSD", 
+        "marca": "Kingston",
         "nome": "Kingston A400 480GB",
-        "preco": "R$ 343,90",
-        "image": "https://images.kabum.com.br/produtos/fotos/85198/85198_index_gg.jpg"
+        "tipo": "SATA",
+        "interface": "SATA Rev. 3.0 (6Gb/s)",
+        "capacidade": 480,
+        "potencia": "6.4W",
+        "velocidade_leitura": "500MB/s",
+        "velocidade_gravacao": "450MB/s",
+        "content": [
+          {
+            "label": "Capacidade",
+            "value": "480GB"
+          },
+          {
+            "label": "Tipo",
+            "value": "SATA"
+          },
+          {
+            "label": "Interface",
+            "value": "SATA Rev. 3.0 (6Gb/s)"
+          }
+        ],
+        "preco": 343.90,
+        "image": "https://images.kabum.com.br/produtos/fotos/85198/85198_index_gg.jpg",
+        "icon": "https://i.imgur.com/ELO6FU5.png"
       },
-      "fonte": {
-        "nome": "CX SERIECX 650",
-        "preco": "R$ 489,90",
-        "image": "https://m.media-amazon.com/images/I/51KU-O4PSKL._AC_SL1000_.jpg"
+      {
+        "id": 3,
+        "componente": "Fonte",
+        "nome": "CX SERIE CX650",
+        "marca": "Corsair",
+        "pfc": "Ativo",
+        "potencia": "650W",
+        "tensao_entrada": "100 - 240 VAC",
+        "selo": "80 Plus Bronze",
+        "content": [
+          {
+            "label": "Potência",
+            "value": "650W"
+          },
+          {
+            "label": "Eficiência",
+            "value": "80 Plus Bronze"
+          }
+        ],
+        "preco": 489.90,
+        "image": "https://m.media-amazon.com/images/I/51KU-O4PSKL._AC_SL1000_.jpg",
+        "icon": "https://i.imgur.com/QQeaQ5d.png"
       },
-      "gabinete": {
+      {
+        "id": 2,
+        "componente": "Gabinete",
         "nome": "Pichau Lark",
-        "preco": "R$ 309,89",
-        "image": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/p/g/pg-lk-014.jpg"
+        "marca": "Pichau",
+        "dimensoes": "370 x 205 x 440 mm",
+        "padrao_placa_mae": [
+          "ATX",
+          "Micro-ATX",
+          "Mini-ITX"
+        ],
+        "content": [
+          {
+            "label": "Padrão Placa Mãe",
+            "value": "ATX, Micro-ATX e Mini-ITX"
+          },
+          {
+            "label": "Dimensões",
+            "value": "370x205x440 mm"
+          }
+        ],
+        "preco": 309.89,
+        "image": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/p/g/pg-lk-014.jpg",
+        "icon": "https://i.imgur.com/9RFLzZU.png"
       }
-    },
+    ],
 
-    "valor_total": "R$ 11.143,09"
+    "valor_total": 11143.09
   }
 }

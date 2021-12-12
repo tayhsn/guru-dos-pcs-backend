@@ -7,7 +7,7 @@ const router = Router();
 router.get("/categorias", getAllCategorias);
 router.get("/programa/:id", getProgramasByCategoriaId);
 
-router.post("/mock", getConfigs);
+router.post("/computador", getConfigs);
 router.post("/feedback", postFeedback)
 
 export default router;
