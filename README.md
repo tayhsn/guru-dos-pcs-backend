@@ -1,6 +1,6 @@
 # Guru dos Pcs :computer:
 
-Plataforma WEB que auxilia usuários com médio, pouco ou nenhum conhecimento de hardware, na compra do computador adequado as necessidades de uso, considerando o orçamento disponível para compra.
+Plataforma WEB que auxilia usuários na compra do computador adequado as necessidades de uso, considerando o orçamento disponível para compra.
 
 
 
