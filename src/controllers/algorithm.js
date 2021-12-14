@@ -50,12 +50,14 @@ function generatingComputer(commonProgramsValue, highestCommonValue, orcamento, 
   if(commonProgramsValue === highestCommonValue) {
     if(orcamento === false || orcamento.valor_maximo >= persona.valor_total) {
       return {
+        "status": true,
         "message": "Computador gerado!",
         "computer": persona.componentes,
         "valor_total": persona.valor_total
       }
     } else {
       return { 
+        "status": false,
         "message": "Orçamento insuficiente.",
         "computer": persona.componentes,
         "valor_total": persona.valor_total
