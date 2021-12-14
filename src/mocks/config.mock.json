@@ -331,7 +331,7 @@
             "value": 4
           }
         ],
-        "preco": "R$ 479,90",
+        "preco": 479.90,
         "image": "https://images.kabum.com.br/produtos/fotos/156169/processador-intel-pentium-gold-g5420-cache-4m-3-80-ghz-lga1151-intel-uhd-graphics-610-2-nucleos-bx80684g5420_1627567012_gg.jpg",
         "icon": "https://i.imgur.com/rTxfxGd.png"
       },
@@ -534,7 +534,7 @@
             "value": 20
           }
         ],
-        "preco": "R$ 2.689,90",
+        "preco": 2689.90,
         "image": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/158261/Processador-Intel-Core-I9-10900F-10-Gera-o-Cache-20MB-2-8GHz-5-2GHz-Turbo-LGA1200-BX8070110900F_1637321955_gg.jpg",
         "icon": "https://i.imgur.com/rTxfxGd.png"
       },
